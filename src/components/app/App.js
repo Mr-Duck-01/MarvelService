@@ -7,6 +7,7 @@ import ErrorBouandery from "../errorBoundery/ErrorBoundery";
 
 import decoration from '../../resources/img/vision.png';
 import ComicsList from "../comicsList/ComicsList";
+// import TestComponent from "../testComonent/TestComponent";
 
 const App = () => {
 
@@ -33,7 +34,7 @@ const App = () => {
                     </ErrorBouandery>
                 </div>
                 <img className="bg-decoration" src={decoration} alt="vision"/> */}
-
+                {/* <TestComponent/> */}
                 <ComicsList/>
             </main>
         </div>
