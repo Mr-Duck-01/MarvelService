@@ -19,20 +19,20 @@ const ComicsList = () => {
     const onRequest = (offset, initial) => {
         clearError();
         initial ? setNewItemLoading(false) : setNewItemLoading(true);
-        getAllComics()
+        getAllComics(offset)
             .then(onComicsListLoaded);
     }
 
     const onComicsListLoaded = (newComicsList) => {
         let ended = false;
 
-        if (newComicsList < 8) {
+        if (newComicsList.length < 8) {
             ended = true;
         }
 
-        setComicsList(comicsList => [...comicsList, ...newComicsList]);
+        setComicsList([...comicsList, ...newComicsList]);
         setNewItemLoading(false);
-        setOffset(offset => offset + 8);
+        setOffset(offset + 8);
         setComicsEnded(ended);
     }
 

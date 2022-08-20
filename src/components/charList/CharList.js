@@ -32,9 +32,9 @@ const CharList = (props) => {
             ended = true;
         }
 
-        setCharList(charList => [...charList, ...newCharList]);
+        setCharList([...charList, ...newCharList]);
         setNewItemLoading(false);
-        setOffset(offset => offset + 9);
+        setOffset(offset + 9);
         setCharEnded(ended);
     }
 
