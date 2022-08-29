@@ -35,9 +35,6 @@ const App = () => {
                             <Route exact path="/characters/:id">
                                 <SinglePage Component={SingleCharacterLayout} dataType='character'/>
                             </Route>
-                            {/* <Route exact path="/comics/:comicId">
-                                <SingleComicPage/>
-                            </Route> */}
                             <Route path="*">
                                 <Page404/>
                             </Route>

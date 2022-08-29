@@ -79,5 +79,3 @@ const ComicsList = () => {
 }
 
 export default ComicsList;
-
-// git test
